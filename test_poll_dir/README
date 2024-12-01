@@ -1,0 +1,5 @@
+main.c 會產生FIFO File, 並往其中寫入資料。
+
+B.c 會用system call poll去查看FIFO file是否有資料可以讀。
+
+FIFO file open後不會馬上寫資料, 會等有request時才寫入資料, 詳情看Notion筆記。
